@@ -48,7 +48,7 @@ def upload():
     # The optimizers are used for improving speed and performance for training a specific model.
     # The main feature of ftrloptimizer is to keep near zero weights at zero, so calculations can be skipped and optimized.
     # Regularization is a technique used to avoid overfitting.
-    # Regularization allows for you to control your model’s complexity and makes the model more generalizable to unseen data.
+    # Regularization allows for you to control your models complexity and makes the model more generalizable to unseen data.
     model = tf.estimator.LinearClassifier(feature_columns=feat_cols,
                                           n_classes=2,
                                           model_dir="cdiabetes",
